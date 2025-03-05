@@ -30,6 +30,7 @@ first-section
 second-section
 fourth-section
 last-section
+responsive
 before-footer
 
 <!-- Youssef's modification -->
