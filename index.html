@@ -10,18 +10,35 @@
 
 <body>
 
-    <nav>
-        <h2>array.</h2>
-        <div class="right">
-            <menu class="menu">
-                <a href="">products</a>
-                <a href="">Features</a>
-                <a href="">Reviews</a>
-                <a href="">Pricing</a>
-            </menu>
-            <button>Sign up</button>
-        </div>
-    </nav>
+    <div class="navigation">
+        <a href="#">array.</a>
+
+        <input type="checkbox" name="" id="menu">
+
+        <label class="open" for="menu">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list"
+                viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                    d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
+            </svg>
+        </label>
+
+        <nav>
+            <label class="close" for="menu">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#ffffff" class="bi bi-x-lg"
+                    viewBox="0 0 16 16">
+                    <path
+                        d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z" />
+                </svg>
+            </label>
+
+            <a href="#">Products</a>
+            <a href="#">Features</a>
+            <a href="#">Reviews</a>
+            <a href="#">Pricing</a>
+            <button>Sign Up</button>
+        </nav>
+    </div>
 
     <div class="first-section">
         <img src="./public/images/register-image.png" alt="">
@@ -153,7 +170,7 @@
     <div class="parent">
 
         <h2>Boost your revenue & cut work hours</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+        <p class="p">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
 
         <div class="s-container">
             <div class="childrens">
@@ -172,7 +189,7 @@
             </div>
 
         </div>
-        <p>Lorem ipsum dolor sit amet.</p>
+        <p class="par">Lorem ipsum dolor sit amet.</p>
     </div>
 
 

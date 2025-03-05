@@ -4,43 +4,42 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-nav {
+.navigation {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding-top: 20px;
+    justify-content: center;
+    gap: 22rem;
+    padding-top: 2vh;
+    padding-bottom: 6vh;
 }
 
-nav>h2 {
-    color: #6c47e6;
-    padding-left: 20rem;
-
-}
-
-.right {
-    display: flex;
-    align-items: center;
-    /* justify-content: center; */
-    padding-right: 20rem;
-    gap: 1rem;
-
-}
-
-.menu>a {
+.navigation>a {
     text-decoration: none;
-    color: black;
-    padding: 0.5rem;
+    color: #6d48e5;
+    font-weight: 550;
 }
 
-.right>button {
-    background-color: #6c47e6;
-    border-radius: 5px;
-    border: none;
+.navigation>nav {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.navigation>nav>a {
+    text-decoration: none;
+    color: #364655;
+    font-size: 15px;
+}
+
+.navigation>nav>button {
+    background-color: #6d48e5;
     color: white;
-    padding: 10px;
-
+    border: none;
+    border-radius: 3px;
+    width: 4.5rem;
+    height: 1.9rem;
+    font-size: 14px;
 }
-
 
 .first-section {
     display: flex;
@@ -264,4 +263,200 @@ footer > h2{
     text-decoration: none;
     font-weight: bold;
     color:#808080a2;
+}
+
+
+#menu,
+label {
+    display: none;
+}
+
+.close,
+.open {
+    display: none;
+}
+
+
+@media (max-width:480px){
+    .label,
+    .close {
+        display: block;
+    }
+
+    .f-navbar>nav>label {
+        display: block;
+    }
+
+    .open {
+        display: block;
+    }
+
+    .f-navbar>nav>a {
+        color: #ffffff;
+        font-size: 18px;
+    }
+
+    .f-navbar>nav>button {
+        width: 5.5rem;
+        height: 2.2rem;
+        font-size: 18px;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    #menu:checked~nav {
+        right: 0;
+    }
+
+    nav {
+        background-color: #353535;
+        position: fixed;
+        width: 85%;
+        height: 100vh;
+        right: -200%;
+        top: 0;
+        transition: 0.5s;
+        flex-direction: column;
+        align-items: start;
+        gap: 5vh !important;
+        padding: 5vw !important;
+    }
+
+    #menu:checked~.close {
+        display: block;
+    }
+
+    .close {
+        align-self: end;
+    }
+
+    .first-section{
+        flex-direction: column !important;
+    }
+
+    .first-section>img{
+          width: 20rem;
+          height: 10rem;
+    }
+
+    .first-section>h1{
+        font-size: 1.3rem;
+    }
+    
+    .first-section>p{
+        text-align: center;
+        width: 20rem;
+    }
+
+    .first-section>button{
+        padding: 1vh 2vw;
+
+    }
+
+    .second-section{
+        flex-direction: column;
+    }
+
+    .third-section{
+        text-align: center;
+        flex-direction: column;
+        margin-top: 0;
+    }
+
+    .icons{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .fourth-section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 1.5rem;
+        
+    }
+    
+    .title{
+        justify-content: center;
+        align-items: center;
+        width: 20rem;
+    }
+
+    .title>h1{
+        width: 25rem;
+    }
+
+    .title>p{
+        width: 25rem;
+        padding: 15px;
+    }
+
+    .cnt{
+        flex-direction: column;
+    }
+
+    .cnt>img{
+        width: 25rem;
+        height: 15rem;
+    }
+
+    .cnt2{
+        flex-direction: column;
+        padding: 1.5rem;
+    }
+
+    .cnt2>img{
+        width: 25rem;
+        height: 15rem;
+    }
+
+    .parent>h2:nth-child(1){
+        align-items: center;
+        justify-content: center;
+        width: 27rem;
+
+    }
+
+    .p{
+        text-align: center;
+        justify-content: center;
+        width: 20rem;
+        
+    }
+    .s-container{
+        flex-direction: column;
+    }
+
+
+    .last-section{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 5rem;
+    }
+
+    .first{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .first>.parag1{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .last-section>img{
+        width: 25rem;
+        height: 15rem;
+    }
+
+    footer{
+        flex-direction: column;
+    }
+
 }
