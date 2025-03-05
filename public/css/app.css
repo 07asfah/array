@@ -163,3 +163,28 @@ nav>h2 {
 }
 
 
+/* ~section five */
+.parent{
+    padding: 8vh;
+    background-color: #6D48E5;
+    color: #ffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  gap: 2vh;
+}
+.s-container {
+    display: flex;
+    gap: 10vw;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.childrens {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2vh;
+
+}
+.childrens >h1{
+font-size: 50px;
+}
