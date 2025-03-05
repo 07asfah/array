@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;   
 }
 
 .navigation {
@@ -27,12 +27,12 @@
 
 .navigation>nav>a {
     text-decoration: none;
-    color: #364655;
+    color: #d6dee4;
     font-size: 15px;
 }
 
-.navigation>nav>button {
-    background-color: #6d48e5;
+.navigation>nav>button {                                                                                                                                                                            
+    background-color: #161517;
     color: white;
     border: none;
     border-radius: 3px;
@@ -94,7 +94,7 @@
 .hero-div>p,
 .icons>div>p {
     width: 60%;
-    color: #818198;
+    color:#818198;
     font-size: 16px;
     text-align: center;
 
@@ -171,7 +171,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-  gap: 2vh;
+    gap: 2vh;
 }
 .s-container {
     display: flex;
@@ -278,6 +278,9 @@ label {
 
 
 @media (max-width:480px){
+    *{
+        overflow-y: hidden;
+    }
     .label,
     .close {
         display: block;
