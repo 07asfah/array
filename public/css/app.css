@@ -188,3 +188,24 @@ nav>h2 {
 .childrens >h1{
 font-size: 50px;
 }
+.last-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.left-section{
+    display: flex;
+    flex-direction: column;
+}
+
+.first{
+    display: flex;
+    align-items: center;
+}
+
+.parag1{
+    display: flex;
+    flex-direction: column;
+}
+
